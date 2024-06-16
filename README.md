@@ -36,8 +36,8 @@ API Integration:
 
 ### Contact Information:
     Created by: Sourav Kumar Swain
-    Github link: 
+    Github link: https://github.com/SouravKumar5800/weatherForecastApplication
     Publish Link: https://gregarious-taiyaki-0059b5.netlify.app
-    video recording link:
+    video recording link:https://drive.google.com/drive/folders/14BzCdJmELjQDKMqWz7yJYp79cyQdr0Vq?usp=drive_link
 
 
