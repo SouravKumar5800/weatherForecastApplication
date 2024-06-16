@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.light {
+  --primary-text-color: #000;
+  --background-color: linear-gradient(216deg, rgba(179,109,212,1) 40%, rgba(74,201,222,1) 100%);
+  --secondary-bg-color: #fff;
+}
+
+.dark {
+  --primary-text-color: #fff;
+  --background-color: linear-gradient(216deg, rgba(86,9,121,1) 40%, rgba(0,164,255,1) 100%);
+  --secondary-bg-color: #2e2c2c;
+
+}
+
+@keyframes card-load {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 0px
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
